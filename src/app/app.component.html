@@ -1,0 +1,17 @@
+<div class="div_calc">
+  <h1>Калькулятор
+  
+  </h1>
+  <select [(ngModel)]="operator1">
+  <option value="!">!</option>
+  </select>
+  <input [(ngModel)]="firstOperands" type="number">
+  <select [(ngModel)]="operator2">
+  <option value="&&">&&</option>
+  <option value="||">||</option>
+  </select>
+  <input [(ngModel)]="secondOperands" type="number">
+  <input (click)="doCalc()" type="submit" value="Подтвердить">
+  <p>Результат {{ result }}</p>
+  <p>Текст ошибки {{ Error }}</p>
+  </div>
